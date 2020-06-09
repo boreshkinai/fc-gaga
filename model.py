@@ -7,6 +7,7 @@ from utils import MetricsCallback
 
 
 hyperparams_defaults = {
+    "dataset": "metr-la", 
     "repeat": list(range(5)),
     "epochs": [60], 
     "steps_per_epoch": [800],  # 800 METR-LA, 800 PEMS-BAY
@@ -27,6 +28,7 @@ hyperparams_defaults = {
 }
 
 class Parameters(NamedTuple):
+    dataset: str
     repeat: int
     epochs: int
     steps_per_epoch: int
