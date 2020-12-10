@@ -1,17 +1,28 @@
-# fc-gaga
+# FC-GAGA
+
+This repo provides an implementation of the FC-GAGA algorithm introduced in
+https://arxiv.org/abs/2007.15531 and enables reproducing the experimental
+results presented in the paper.
+
+![FC-GAGA Architecture](fig/model.png>)
 
 <p align="center">
   <img width="600"  src=./fig/model.png>
 </p>
 
-Please cite as 
+## Citation
 
-@article{Oreshkin2020FCGAGAFC,
-  title={FC-GAGA: Fully Connected Gated Graph Architecture for Spatio-Temporal Traffic Forecasting},
-  author={Boris N. Oreshkin and A. Amini and Lucy Coyle and M. Coates},
-  journal={ArXiv},
-  year={2020},
-  volume={abs/2007.15531}
+If you use FC-GAGA in any context, please cite the following paper:
+
+```
+@inproceedings{
+  oreshkin2020fcgaga,
+  title={{FC-GAGA}: Fully Connected Gated Graph Architecture for Spatio-Temporal Traffic Forecasting},
+  author={Boris N. Oreshkin and Arezou Amini and Lucy Coyle and Mark J. Coates},
+  booktitle={AAAI},
+  year={2021},
 }
+```
+
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/boreshkinai/fc-gaga/blob/master/FC_GAGA.ipynb)
