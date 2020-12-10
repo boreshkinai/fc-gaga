@@ -4,8 +4,6 @@ This repo provides an implementation of the FC-GAGA algorithm introduced in
 https://arxiv.org/abs/2007.15531 and enables reproducing the experimental
 results presented in the paper.
 
-![FC-GAGA Architecture](./fig/model.png>)
-
 <p align="center">
   <img width="600"  src=./fig/model.png>
 </p>
