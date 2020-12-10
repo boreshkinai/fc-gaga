@@ -15,23 +15,23 @@ class DatasetParameters(NamedTuple):
 
 
 class Dataset(object):
-    def __init__(self, name='metr-la', horizon=3, history_length=3):
+    def __init__(self, name='metr-la', horizon: int = 3, history_length: int = 3, path: str = 'data'):
         self.horizon = horizon
         self.history_length = history_length
         self.name = name
 
         if self.name == 'metr-la':
-            gdd.download_file_from_google_drive(file_id='1pAGRfzMx6K9WWsfDcD1NMbIif0T0saFC', dest_path=f"data/metr-la.h5", unzip=False)
+            gdd.download_file_from_google_drive(file_id='1pAGRfzMx6K9WWsfDcD1NMbIif0T0saFC', dest_path=f"{path}/metr-la.h5", unzip=False)
         elif self.name == 'pems-bay':
-            gdd.download_file_from_google_drive(file_id='1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq', dest_path='data/pems-bay.h5', unzip=False)
+            gdd.download_file_from_google_drive(file_id='1wD-mHlqAb2mtHOe_68fZvDh1LpDegMMq', dest_path=f"{path}/pems-bay.h5", unzip=False)
         else:
             raise Exception(f"unknown dataset: {self.name}")
-        pathlib.Path(f"data/{self.name}").mkdir(parents=True, exist_ok=True)
+        pathlib.Path(f"{path}/{self.name}").mkdir(parents=True, exist_ok=True)
 
         dataset_parameters = {"history_length": self.history_length, 
                               "horizon": self.horizon, 
-                              "traffic_df_filename": f"data/{self.name}.h5",
-                              "output_dir": f"data/{self.name}"}
+                              "traffic_df_filename": f"{path}/{self.name}.h5",
+                              "output_dir": f"{path}/{self.name}"}
 
         self.data = {}
         for category in ['train', 'val', 'test']:
