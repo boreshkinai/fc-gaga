@@ -23,4 +23,4 @@ If you use FC-GAGA in any context, please cite the following paper:
 ```
 
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/boreshkinai/fc-gaga/blob/master/FC_GAGA.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HqmvWA-RhcXoCzpgfvUQ4NFLaEEzdeuA)
