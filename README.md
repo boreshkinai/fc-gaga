@@ -36,4 +36,4 @@ git clone git@github.com:boreshkinai/fc-gaga.git
 
 cd fc-gaga
 
-
+docker build -f Dockerfile -t fc-gaga:$USER .
