@@ -41,3 +41,5 @@ docker build -f Dockerfile -t fc-gaga:$USER .
 nvidia-docker run -p 8888:8888 -v ~/workspace/fc-gaga:/workspace/fc-gaga -t -d --shm-size="1g" --name fc_gaga_$USER fc-gaga:$USER 
 
 docker exec -i -t fc_gaga_$USER /bin/bash 
+
+python run.py
