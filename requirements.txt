@@ -2,3 +2,4 @@ tensorflow-gpu==2.3.0
 tqdm 
 googledrivedownloader
 pandas
+tables
