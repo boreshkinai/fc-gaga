@@ -28,18 +28,23 @@ If you use FC-GAGA in any context, please cite the following paper:
 
 ## Standalone docker based
 
+Clone this repository
+```
 mkdir workspace
-
 cd workspace
-
 git clone git@github.com:boreshkinai/fc-gaga.git   
-
+```
+Build docker
+```
 cd fc-gaga
-
 docker build -f Dockerfile -t fc-gaga:$USER .
-
+```
+Start docker container
+```
 nvidia-docker run -p 8888:8888 -v ~/workspace/fc-gaga:/workspace/fc-gaga -t -d --shm-size="1g" --name fc_gaga_$USER fc-gaga:$USER 
-
+```
+Go inside container and run the main script
+```
 docker exec -i -t fc_gaga_$USER /bin/bash 
-
 python run.py
+```
