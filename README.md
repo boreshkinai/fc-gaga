@@ -22,5 +22,10 @@ If you use FC-GAGA in any context, please cite the following paper:
 }
 ```
 
+## COLAB based demo
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HqmvWA-RhcXoCzpgfvUQ4NFLaEEzdeuA)
+
+## Standalone docker based
+
+git clone git@github.com:boreshkinai/fc-gaga.git   
