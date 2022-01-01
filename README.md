@@ -37,3 +37,5 @@ git clone git@github.com:boreshkinai/fc-gaga.git
 cd fc-gaga
 
 docker build -f Dockerfile -t fc-gaga:$USER .
+
+nvidia-docker run -p 8888:8888 -v $/workspace/fc-gaga/logs:/workspace/fc-gaga/logs -v $/workspace/fc-gaga/data:/workspace/fc-gaga/data -t -d --shm-size="1g" --name fc_gaga_$USER fc-gaga:$USER 
