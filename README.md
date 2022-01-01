@@ -34,4 +34,6 @@ cd workspace
 
 git clone git@github.com:boreshkinai/fc-gaga.git   
 
+cd fc-gaga
+
 
