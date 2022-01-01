@@ -10,7 +10,7 @@ from model import hyperparams_defaults as hyperparams_dict
 
 print("*********************************")
 print("Default FC-GAGA parameters:")
-print(hyperparams_dic)
+print(hyperparams_dict)
 print("*********************************")
 
 hyperparams_dict["dataset"] = 'metr-la'
