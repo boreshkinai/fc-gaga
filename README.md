@@ -28,4 +28,10 @@ If you use FC-GAGA in any context, please cite the following paper:
 
 ## Standalone docker based
 
+mkdir workspace
+
+cd workspace
+
 git clone git@github.com:boreshkinai/fc-gaga.git   
+
+
