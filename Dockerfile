@@ -10,10 +10,6 @@ ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 ENV PYTHONIOENCODING=utf-8
 
-RUN python -m pip install pip -U
-
-# Install Jupyter
-RUN conda install -y jupyter
 # Install tini, which will keep the container up as a PID 1
 RUN apt-get install -y curl grep sed dpkg && \
     TINI_VERSION=`curl https://github.com/krallin/tini/releases/latest | grep -o "/v.*\"" | sed 's:^..\(.*\).$:\1:'` && \
@@ -22,6 +18,10 @@ RUN apt-get install -y curl grep sed dpkg && \
     rm tini.deb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+    
+ENV PATH /opt/conda/bin:$PATH
+
+RUN conda install python=3.6.0
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r ./requirements.txt
