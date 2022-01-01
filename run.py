@@ -1,4 +1,3 @@
-# import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
 print("Tensorflow version:", tf.__version__)
