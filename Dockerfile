@@ -28,7 +28,7 @@ RUN apt-get install -y curl grep sed dpkg && \
     
 ENV PATH /opt/conda/bin:$PATH
 
-RUN conda install python=3.6.0
+RUN conda install python=3.6.5
 
 COPY ./requirements.txt ./requirements.txt
 RUN pip install -r ./requirements.txt
