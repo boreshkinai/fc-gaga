@@ -1,4 +1,4 @@
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04
 
 RUN date
 RUN apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8 && apt-get install -y git wget g++
