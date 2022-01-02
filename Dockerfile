@@ -1,8 +1,5 @@
 FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
 
-ENV PROJECT_PATH /workspace/pose-estimation
-ENV HYBRIDIK_PATH ${PROJECT_PATH}/HybrIK
-
 RUN date
 RUN apt-get update && apt-get install -y locales && locale-gen en_US.UTF-8 && apt-get install -y git wget g++
 ENV LANG en_US.UTF-8
