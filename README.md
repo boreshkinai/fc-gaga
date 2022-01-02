@@ -27,7 +27,7 @@ If you use FC-GAGA in any context, please cite the following paper:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1HqmvWA-RhcXoCzpgfvUQ4NFLaEEzdeuA)
 
 ## Standalone Docker based demo
-This workflow can be used to reproduce the FC-GAGA results without relying on the Google Collab environment. All necessary dependencies are captured in ```Dockerfile``` and ```requirements.txt```
+This workflow can be used to reproduce the FC-GAGA results without relying on the Google Colab environment. All necessary dependencies are captured in ```Dockerfile``` and ```requirements.txt```
 
 Clone this repository
 ```
@@ -49,4 +49,4 @@ Go inside the container and run the main script
 docker exec -i -t fc_gaga_$USER /bin/bash 
 python run.py
 ```
-The script ```run.py``` reproduces all the computations you can see in the Collab notebook.
+The script ```run.py``` reproduces all the computations you can see in the Colab notebook.
