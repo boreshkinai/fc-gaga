@@ -1,7 +1,7 @@
 # FC-GAGA
 
 This repo provides an implementation of the FC-GAGA algorithm introduced in
-https://arxiv.org/abs/2007.15531 and enables reproducing the experimental
+https://arxiv.org/abs/2007.15531 and reproduces the experimental
 results presented in the paper.
 
 <p align="center">
